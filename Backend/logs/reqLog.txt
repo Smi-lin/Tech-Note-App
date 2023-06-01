@@ -1,0 +1,7 @@
+2023-06-01		12:20:08	8ea590e2-6a24-4f8b-8a44-1fe512efd1aa	 GET	undefined	/404 
+2023-06-01		12:20:08	a0965d4c-2713-497c-9570-af28495fa6eb	 GET	undefined	/css/style.css 
+2023-06-01		12:30:43	bb79ac1b-a634-4fbc-b619-71eb0e93b81d	 OPTIONS	https://www.google.com	/ 
+2023-06-01		12:30:43	c0f3f2fd-87e6-4398-ba8a-045f55e09fa4	 GET	https://www.google.com	/ 
+2023-06-01		12:38:12	9ef051ce-250d-4970-9c3d-5aba76daf967	 OPTIONS	https://www.google.com	/ 
+
+
