@@ -5,3 +5,28 @@
 2023-06-01		12:38:12	9ef051ce-250d-4970-9c3d-5aba76daf967	 OPTIONS	https://www.google.com	/ 
 
 
+2023-06-02		11:12:50	3a29b917-acee-421d-b2aa-ef221a25fdc9	 GET	undefined	/users 
+2023-06-02		11:13:14	f1173b77-f765-4362-88d6-6ac994b0bd0b	 GET	undefined	/users 
+2023-06-02		11:13:32	cf8c90a4-da15-4e5a-833c-d976e25881ce	 GET	undefined	/users 
+2023-06-02		12:07:31	fc0546de-e096-42a0-b629-dee376a1b91e	 POST	undefined	/users 
+2023-06-02		12:08:24	b50ad1c9-5c62-4c1d-bb4f-3508e5d913db	 POST	undefined	/users 
+2023-06-02		12:08:33	cb841276-703d-403b-8dde-a1fb4244fb93	 POST	undefined	/users 
+2023-06-02		12:12:51	4ec73b88-283e-484f-9efa-b9dd07e39b66	 POST	undefined	/users 
+2023-06-02		12:16:26	91fa7182-75b8-4982-ba93-4c646bb57ee6	 POST	undefined	/users 
+2023-06-02		12:19:56	f44c7e48-1bef-474c-89b1-00895d586e56	 POST	undefined	/users 
+2023-06-02		12:23:03	563e5827-2bfa-4570-90a1-8019fe41365f	 POST	undefined	/users 
+2023-06-02		12:26:23	a2bd09ac-4d43-4cbd-8b8d-7e83e4d9c11d	 GET	undefined	/users 
+2023-06-02		12:27:02	c4d2ee84-0709-490e-a6f1-3a0c9b1783ba	 GET	undefined	/users 
+2023-06-02		12:30:33	b5ae9603-97ee-4853-83c6-c568b4f2056c	 GET	undefined	/users 
+2023-06-02		12:30:52	10d9dd6d-f129-4d9a-962a-92e5c72b8fbf	 GET	undefined	/users 
+2023-06-02		12:33:32	05b11181-ce1c-422e-a940-d2cea22b65cc	 GET	undefined	/users 
+2023-06-02		12:33:38	57d950a3-b1d2-4d53-99b7-faafdc271074	 POST	undefined	/users 
+2023-06-02		12:33:44	97db61e8-d604-4780-b035-806b4e0716e7	 PUT	undefined	/users 
+2023-06-02		12:33:48	37730b9d-7bfc-448b-904c-eb0ec62cdb3f	 GET	undefined	/users 
+2023-06-02		12:35:26	af2c8f47-5999-4922-a4d9-ba6efdbc0746	 GET	undefined	/users 
+2023-06-02		12:37:03	d61bc704-a277-4fde-9ab9-9f91ed90fc70	 POST	undefined	/users 
+2023-06-02		13:32:14	de759a23-cc4a-454f-bbd9-ca2bde1e7138	 PATCH	undefined	/users 
+2023-06-02		13:32:24	c8c35208-8df4-485d-ae20-35c9e24cba8d	 PUT	undefined	/users 
+2023-06-02		13:32:37	9c25cca9-7190-427a-8cea-df469a2e9457	 PATCH	undefined	/users 
+2023-06-02		13:34:53	28f7edb4-2ce2-4986-ab45-bcc96ca11097	 PUT	undefined	/users 
+2023-06-02		13:34:58	d08bc089-a814-4489-ac21-6b16eb31d213	 PATCH	undefined	/users 

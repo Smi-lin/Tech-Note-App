@@ -23,8 +23,10 @@ app.use(express.json());
 app.use(cors(corsOptions));
 app.use(cookieParser())
 app.use('/', express.static(path.join(__dirname, 'public')));
+
 app.use('/', require('./routes/root'))
 
+app.use('/users', require("./routes/userRoutes"))
 
 
 
@@ -38,6 +40,8 @@ app.all("*", (req, res) => {
       res.type("txt").send("404 Not Found");
     }
 });
+
+
 
 app.use(errorHandler);
 
