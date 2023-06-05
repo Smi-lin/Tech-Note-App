@@ -57,31 +57,31 @@ const createUser = asyncHandler(async (req, res) => {
 // access private:
 
 const updateUser = asyncHandler(async (req, res) => {
-    const {id, username, roles, active} = req.body;
+  const { id, username, roles, active, password } = req.body;
 
-    // confirm data
-    if(id || !roles.length || typeof active !== 'boolean') {
-        return res.status(400).json({message: 'All fields are required.'});
-    }
-    const user = await User.findById(id).exec();
-    if(!user) {
-        return res.status(400).json({message: 'User not found '})
-    }
+  // confirm data
+  if (!id || !username || !Array.isArray ||  !roles.length || typeof active !== "boolean") {
+    return res.status(400).json({ message: "All fields are required." });
+  }
+  const user = await User.findById(id).exec();
+  if (!user) {
+    return res.status(400).json({ message: "User not found " });
+  }
 
-    // check for duplicate
-    const duplicate = await User.findOne({username}).lean().exec();
-    if(duplicate && duplicate?._id.toString() !== id) {
-        return res.status(409).json({message: 'Duplicate username'})
-    }
-    user.username = username
-    user.roles = roles
-    user.active = active
-    if(password) {
-        // Hash password
-        user.password = await bcrypt.hash(password, 10)  //salt rounds
-    }
-    const updateUser = await User.save()
-    res.json({message: `${updateUser.username} updated`})
+  // check for duplicate
+  const duplicate = await User.findOne({ username }).lean().exec();
+  if (duplicate && duplicate?._id.toString() !== id) {
+    return res.status(400).json({ message: "Duplicate username" });
+  }
+  user.username = username;
+  user.roles = roles;
+  user.active = active;
+  if (password) {
+    // Hash password
+    user.password = await bcrypt.hash(password, 10); //salt rounds
+  }
+  const updateUser = await user.save();
+  res.json({ message: `${updateUser.username} updated` });
 });
 
 // desc delete a users:
@@ -89,10 +89,30 @@ const updateUser = asyncHandler(async (req, res) => {
 // access private:
 
 const deleteUser = asyncHandler(async (req, res) => {
-    const {id} = req.body
-    if(!id) {
-        return 
-    }
+  // desc delete users
+  // routes DELETE user
+  // access private
+
+  const { id } = req.body;
+  if (!id) {
+    return res.status(400).json({ message: "user ID is required" });
+  }
+
+  const notes = await Note.findOne({ user: id }).lean().exec();
+  if (notes) {
+    return res.status(400).json({ message: "user assigned notes" });
+  }
+
+  const user = await User.findById(id).exec();
+  if (!user) {
+    return res.status(400).json({ message: "user not found " });
+  }
+
+  const result = await user.deleteOne();
+  const reply = `username ${result.username} with ID ${result._id}
+   has been deleted`;
+
+  res.json(reply);
 });
 
 module.exports = {

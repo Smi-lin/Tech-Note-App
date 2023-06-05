@@ -2,3 +2,14 @@
 2023-06-01		13:16:22	5a7ee0c3-2f6b-4974-8ee1-a16439c82c54	 Error: Not allowed by CORS	GET	/	https://www.google.com 
 2023-06-02		11:12:50	dad0fc71-b610-43c0-a5e2-9dd5bb6debeb	 ReferenceError: response is not defined	GET	/users	undefined 
 2023-06-02		11:13:14	adf224b7-54e1-4712-bc68-2cec299b181c	 ReferenceError: res is not defined	GET	/users	undefined 
+2023-06-05		09:37:27	45f71859-9de6-4ce0-a301-933ab97c2368	 ReferenceError: password is not defined	PATCH	/users	undefined 
+2023-06-05		09:37:34	9b974401-a190-4b6a-b5d6-845776181258	 ReferenceError: password is not defined	PATCH	/users	undefined 
+2023-06-05		09:37:38	147cc7e8-bc49-474b-a312-a3803f89461d	 ReferenceError: password is not defined	PATCH	/users	undefined 
+2023-06-05		09:39:04	cffedc01-06db-404c-bc91-db4efe43c2f2	 ReferenceError: password is not defined	PATCH	/users	undefined 
+2023-06-05		09:39:21	5cfcf53c-ceab-42f8-b3cc-4d1c2a635e36	 ReferenceError: password is not defined	PATCH	/users	undefined 
+2023-06-05		09:39:36	ba14dfdb-943f-42c2-a18f-c4a1f1bc3a7d	 ReferenceError: password is not defined	PATCH	/users	undefined 
+2023-06-05		09:39:42	9e0e156d-9041-489f-b0d1-160a1f92c71a	 ReferenceError: password is not defined	PATCH	/users	undefined 
+2023-06-05		09:40:17	3e44d6b4-596b-431b-bf03-3f82602b0cb0	 ReferenceError: password is not defined	PATCH	/users	undefined 
+2023-06-05		09:43:24	6c274366-da49-4c7d-921f-5de1b32ec430	 ReferenceError: password is not defined	PATCH	/users	undefined 
+2023-06-05		09:44:06	fcfe0b89-1b2e-454b-a6b3-1e5bef405643	 ReferenceError: password is not defined	PATCH	/users	undefined 
+2023-06-05		09:46:53	34fe6e87-80b1-4a04-8000-301ebfc2b9bc	 TypeError: Cannot read properties of null (reading 'length')	DELETE	/users	undefined 
