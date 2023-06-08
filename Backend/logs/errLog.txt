@@ -13,3 +13,28 @@
 2023-06-05		09:43:24	6c274366-da49-4c7d-921f-5de1b32ec430	 ReferenceError: password is not defined	PATCH	/users	undefined 
 2023-06-05		09:44:06	fcfe0b89-1b2e-454b-a6b3-1e5bef405643	 ReferenceError: password is not defined	PATCH	/users	undefined 
 2023-06-05		09:46:53	34fe6e87-80b1-4a04-8000-301ebfc2b9bc	 TypeError: Cannot read properties of null (reading 'length')	DELETE	/users	undefined 
+2023-06-06		09:24:23	a825ef2e-2ab6-424f-b619-7de5648794d5	 ValidationError: Notes validation failed: user: Cast to ObjectId failed for value "lola" (type string) at path "user" because of "BSONError"	POST	/notes	undefined 
+2023-06-06		09:24:47	23ee4f62-2784-4f4a-a62a-a1233ac9784d	 SyntaxError: Unexpected token 'l', ..."  "user": lola,
+    "... is not valid JSON	POST	/notes	undefined 
+2023-06-06		12:46:06	d406f3ed-71fd-41aa-810a-b28893b53da3	 Error: Not allowed by CORS	GET	/users	http://localhost:5173 
+2023-06-06		12:49:04	91c0834d-d710-4ebb-8412-c0792b10ff6a	 Error: Not allowed by CORS	GET	/users	http://localhost:5173 
+2023-06-06		12:50:14	4e7a660b-39cd-4d0a-9f9f-5f11e2fa91cb	 Error: Not allowed by CORS	GET	/users	http://localhost:5173 
+2023-06-06		16:02:41	afa2cd26-a2f2-4d2e-ad4d-5d4a5eb672ce	 SyntaxError: Bad control character in string literal in JSON at position 132	GET	/notes	undefined 
+2023-06-08		09:41:53	46a2ee91-a2b4-4169-a6d6-2e57c04f1d11	 ValidationError: Notes validation failed: user: Cast to ObjectId failed for value "Smiling" (type string) at path "user" because of "BSONError"	POST	/notes	undefined 
+2023-06-08		09:43:26	2bd18e0f-c1ed-4da6-8ff3-604dc9b341e6	 ValidationError: Notes validation failed: user: Cast to ObjectId failed for value "Smiling" (type string) at path "user" because of "BSONError"	POST	/notes	undefined 
+2023-06-08		09:44:04	4b3d749d-05e7-46f0-9462-63dc5a82a71e	 ValidationError: Notes validation failed: user: Cast to ObjectId failed for value "Smiling" (type string) at path "user" because of "BSONError"	POST	/notes	undefined 
+2023-06-08		09:44:43	0c8ecce0-8199-4629-b87a-b61c666afc92	 ValidationError: Notes validation failed: user: Cast to ObjectId failed for value "Smiling" (type string) at path "user" because of "BSONError"	POST	/notes	undefined 
+2023-06-08		09:48:10	f67b7f7d-e1e3-4046-b21e-b089d9bce32c	 CastError: Cast to ObjectId failed for value "sai" (type string) at path "_id" for model "User"	GET	/notes	undefined 
+2023-06-08		09:48:24	0f978a9c-788b-4079-a6d0-d912c1ef70d9	 CastError: Cast to ObjectId failed for value "sai" (type string) at path "_id" for model "User"	GET	/notes	undefined 
+2023-06-08		09:49:11	5403fda0-a5b5-43dc-9478-0597b73e034e	 CastError: Cast to ObjectId failed for value "sai" (type string) at path "_id" for model "User"	GET	/notes	undefined 
+2023-06-08		09:49:29	aad1cfc0-f10c-4094-bb57-09eff42165bc	 CastError: Cast to ObjectId failed for value "sai" (type string) at path "_id" for model "User"	GET	/notes	undefined 
+2023-06-08		09:50:16	2f3b50dd-445f-4ac6-a55f-8181d3d12f39	 CastError: Cast to ObjectId failed for value "sai" (type string) at path "_id" for model "User"	GET	/notes	undefined 
+2023-06-08		09:51:43	9f987abb-83f8-41af-bb83-94559dad2eac	 CastError: Cast to ObjectId failed for value "sai" (type string) at path "_id" for model "User"	GET	/notes	undefined 
+2023-06-08		09:55:26	e8f2ccb4-bde6-4698-b1a8-f4ef04744ede	 CastError: Cast to ObjectId failed for value "sai" (type string) at path "_id" for model "User"	GET	/notes	undefined 
+2023-06-08		09:56:15	c875681a-f96f-4175-8b2b-b6af9faa9810	 TypeError: Cannot read properties of null (reading 'username')	GET	/notes	undefined 
+2023-06-08		09:56:56	7343216b-c96e-4e4e-8519-617d74ae4fb7	 TypeError: Cannot read properties of null (reading 'username')	GET	/notes	undefined 
+2023-06-08		09:58:26	546475a4-2ef6-463d-9820-d540ff1020f2	 TypeError: Cannot read properties of null (reading 'username')	GET	/notes	http://localhost:5173 
+2023-06-08		09:58:31	93432718-f9f2-4a91-9e16-dccbea49f674	 TypeError: Cannot read properties of null (reading 'username')	GET	/notes	http://localhost:5173 
+2023-06-08		09:59:53	151fcd4b-cec3-4c37-8a69-76a1bdd0259a	 TypeError: Cannot read properties of null (reading 'username')	GET	/notes	http://localhost:5173 
+2023-06-08		10:01:46	d5ba0b32-08d4-402a-beba-8a7ed3857b70	 TypeError: Cannot read properties of null (reading 'username')	GET	/notes	http://localhost:5173 
+2023-06-08		10:01:52	9ccafd98-fdd9-4711-a4e4-4ae107d1b160	 TypeError: Cannot read properties of null (reading 'username')	GET	/notes	http://localhost:5173 

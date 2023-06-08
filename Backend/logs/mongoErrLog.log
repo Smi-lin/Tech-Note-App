@@ -1,1 +1,3 @@
 2023-06-01		15:52:12	27ed522f-c442-4483-8ce4-543cc8308b37	 undefined: ECONNREFUSED	querySrv	_mongodb._tcp.cluster0.xkytim8.mongodb.net 
+2023-06-06		14:30:04	46dbcb38-8386-4690-be5f-fe8dcb62421d	 undefined: ECONNREFUSED	querySrv	_mongodb._tcp.cluster0.xkytim8.mongodb.net 
+2023-06-07		16:33:48	590a4798-5727-4a44-a764-ceb72af1ca43	 undefined: ETIMEOUT	querySrv	_mongodb._tcp.cluster0.xkytim8.mongodb.net 
