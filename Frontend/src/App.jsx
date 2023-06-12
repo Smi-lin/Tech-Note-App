@@ -10,6 +10,7 @@ import {
   EditNote,
   NewNote,
 } from "./features/index";
+import Prefetch from "./features/auth/Prefetch";
 
 const App = () => {
   return (
@@ -17,8 +18,10 @@ const App = () => {
       <Route path="/" element={<Layout />}>
         <Route index element={<Public />} />
         <Route path="login" element={<Login />} />
-
-        <Route path="/dash/" element={<DashLayout />}>
+        {/* Protected Routes */}
+        
+          <Route element={<Prefetch/>}> 
+          <Route path="/dash/" element={<DashLayout />}>
           <Route index element={<Welcome />} />
           <Route path="users">
             <Route index element={<UsersList />} />
@@ -30,6 +33,8 @@ const App = () => {
             <Route path=":id" element={<EditNote />} />
             <Route path="new" element={<NewNote />} />
           </Route>
+          </Route>
+       
         </Route>
       </Route>
     </Routes>

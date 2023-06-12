@@ -19,8 +19,8 @@ const getAllNotes = asyncHandler(async (req, res) => {
           // return { ...note, username: user.username };
     
           if(user && user.username) {
-            return {...note, user: user.username };
-          }else return {...note, user: "Unknown" };
+            return {...note, username: user.username };
+          }else return {...note, username: "Unknown" };
         })
       );
       res.status(200).json(notesWithUser);

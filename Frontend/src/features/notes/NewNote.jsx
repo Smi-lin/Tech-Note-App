@@ -1,9 +1,16 @@
-import React from 'react'
+import { useSelector } from "react-redux";
+import { selectAllUsers } from "../users/UsersApiSlice";
+import NewNoteForm from "./NewNoteForm";
 
 const NewNote = () => {
-  return (
-    <div>NewNote</div>
-  )
-}
+  const users = useSelector(selectAllUsers);
+  // return users ? <NewNoteForm users={users}/> : <p>Loading.....</p>;
 
-export default NewNote
+  // if(!users?.length) return <p>Not Currently available</p>
+  const content = <NewNoteForm users= {users}/>
+
+  return content;
+};
+
+
+export default NewNote;

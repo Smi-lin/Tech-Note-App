@@ -7,7 +7,8 @@ import { faSave } from "@fortawesome/free-solid-svg-icons";
 import { ROLES } from "../../config/roles";
 
 const USER_REGEX = /^[A-Z] {3, 20} $/;
-const PWD_REGEX = /^[A-z0-9!@#$%] [4, 12]$/;
+const PWD_REGEX = /^[A-z0-9!@#$%] [4,12]$/;
+
 const NewUserForm = () => {
   const [addNewUser, { isLoading, isSuccess, isError, error }] =
     useAddNewUserMutation();
@@ -70,9 +71,9 @@ const NewUserForm = () => {
       <form className="form" onSubmit={onSaveUserClicked}>
         <div className="form__title-row">
           <h2>New User</h2>
-          <div className="form__actiom-button">
-            <button className="icon-button" title="save" disabled={!canSave}>
-              <FontAwesomeIcon icon={faSave} />
+          <div className="form__action-buttons">
+            <button className="icon-button" title="Save" disabled={!canSave}>
+              <FontAwesomeIcon icon={faSave}/>
             </button>
           </div>
         </div>
