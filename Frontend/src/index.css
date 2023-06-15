@@ -29,8 +29,10 @@
   display: inline-block;
   background-color: var(--TABLE-BGCOLOR);
   color: var(--ERROR);
-  padding: 0.25em;
+  padding: 1.25em;
   margin-bottom: 0.5em;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .errmsg a:any-link {

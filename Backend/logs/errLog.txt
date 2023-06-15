@@ -47,3 +47,55 @@
 2023-06-08		16:10:25	c164b822-0ee3-47db-85b9-ecf441cdadee	 SyntaxError: Unexpected non-whitespace character after JSON at position 210	PATCH	/users	undefined 
 2023-06-08		16:10:37	e22389bb-1d58-462d-b627-3e8851982634	 SyntaxError: Unexpected non-whitespace character after JSON at position 209	PATCH	/users	undefined 
 2023-06-08		16:11:09	922e74fe-1886-4836-981c-5ff876d96895	 SyntaxError: Unexpected non-whitespace character after JSON at position 209	PATCH	/users	undefined 
+2023-06-14		10:53:58	f2af4f2b-d9e6-4c28-92d2-168d2ed8fc3e	 MongoServerSelectionError: connection <monitor> to 100.25.7.28:27017 timed out	PATCH	/notes	http://localhost:5173 
+2023-06-14		11:03:35	68c3f197-48f4-4434-9697-b244c2a9f06d	 MongoServerSelectionError: connection timed out	GET	/notes	http://localhost:5173 
+2023-06-14		16:58:34	8ce4c8fc-4e56-4461-97c9-76eda4797da8	 ValidationError: Note validation failed: user: Cast to ObjectId failed for value "[
+  {
+    _id: '647d9a5b99cc16ad7f0e489f',
+    username: 'Yanhu',
+    roles: [ 'Employee', 'Admin' ],
+    active: true,
+    __v: 1,
+    id: '647d9a5b99cc16ad7f0e489f'
+  },
+  {
+    _id: '647f3506e566cd5ac5e1d245',
+    username: 'Smiling',
+    roles: [ 'Manager' ],
+    active: true,
+    __v: 1,
+    id: '647f3506e566cd5ac5e1d245'
+  },
+  {
+    _id: '6481ee4a59adbdf1b1fabebc',
+    username: 'Kenny',
+    roles: [ 'Employee' ],
+    active: true,
+    __v: 0,
+    id: '6481ee4a59adbdf1b1fabebc'
+  },
+  {
+    _id: '64887d06dae83d84ad9f5aec',
+    username: 'Yoo',
+    roles: [ 'Admin' ],
+    active: true,
+    __v: 0,
+    id: '64887d06dae83d84ad9f5aec'
+  },
+  {
+    _id: '64887e07dae83d84ad9f5afd',
+    username: 'ade',
+    roles: [ 'Employee' ],
+    active: true,
+    __v: 1,
+    id: '64887e07dae83d84ad9f5afd'
+  },
+  {
+    _id: '6489cae69a63fba0e3368a3a',
+    username: 'Tylex',
+    roles: [ 'Employee' ],
+    active: true,
+    __v: 0,
+    id: '6489cae69a63fba0e3368a3a'
+  }
+]" (type Array) at path "user" because of "BSONError"	POST	/notes	http://localhost:5173 

@@ -1,10 +1,16 @@
 import { useState, useEffect } from "react";
-import { useUpdateNewNoteMutation, useDeleteNoteMutation } from "./NotesApiSlice";
+import {
+  useUpdateNewNoteMutation,
+  useDeleteNoteMutation,
+} from "./NotesApiSlice";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSave, faTrashCan } from "@fortawesome/free-solid-svg-icons";
+import useAuth from "../../hooks/useAuth";
 
 const EditNoteForm = ({ note, users }) => {
+  const { isAdmin, isManager } = useAuth();
+
   const [updateNote, { isLoading, isSuccess, isError, error }] =
     useUpdateNewNoteMutation();
 
@@ -77,6 +83,19 @@ const EditNoteForm = ({ note, users }) => {
 
   const errContent = (error?.data?.message || delerror?.data?.message) ?? "";
 
+  let deleButton = null;
+  if (isManager || isAdmin) {
+    deleteButton = (
+      <button
+        className="icon-button"
+        title="Delete"
+        onClick={onDeleteNoteClicked}
+      >
+        <FontAwesomeIcon icon={faTrashCan} />
+      </button>
+    );
+  }
+
   return (
     <>
       <p className={errClass}>{errContent}</p>
@@ -93,13 +112,13 @@ const EditNoteForm = ({ note, users }) => {
             >
               <FontAwesomeIcon icon={faSave} />
             </button>
-            <button
+            {/* <button
               className="icon-button"
               title="Delete"
               onClick={onDeleteNoteClicked}
             >
               <FontAwesomeIcon icon={faTrashCan} />
-            </button>
+            </button> */}
           </div>
         </div>
         <label className="form__label" htmlFor="note-title">
@@ -119,7 +138,7 @@ const EditNoteForm = ({ note, users }) => {
           Text:
         </label>
         <textarea
-          className={`form_input form_input--text ${validTextClass}`}
+          className={`form__input form_input--text ${validTextClass}`}
           id="note-text"
           name="text"
           value={text}
@@ -128,7 +147,7 @@ const EditNoteForm = ({ note, users }) => {
         <div className="form__row">
           <div className="form__divider">
             <label
-              className="form_label form_checkbox-container"
+              className="form__label form_checkbox-container"
               htmlFor="note-completed"
             >
               WORK COMPLETE:
@@ -143,7 +162,7 @@ const EditNoteForm = ({ note, users }) => {
             </label>
 
             <label
-              className="form_label form_checkbox-container"
+              className="form__label form_checkbox-container"
               htmlFor="note-username"
             >
               ASSIGNED TO:

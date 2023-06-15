@@ -10,9 +10,10 @@ import {
   EditNote,
   NewNote,
   PersistLogin,
-  Prefetch
+  Prefetch,
+  RequireAuth,
 } from "./features/index";
-
+import { ROLES } from "./config/roles";
 
 const App = () => {
   return (
@@ -22,19 +23,21 @@ const App = () => {
         <Route path="login" element={<Login />} />
         {/* Protected Routes */}
 
-        <Route element={<PersistLogin />}>
-          <Route element={<Prefetch />}>
-            <Route path="/dash/" element={<DashLayout />}>
-              <Route index element={<Welcome />} />
-              <Route path="users">
-                <Route index element={<UsersList />} />
-                <Route path=":id" element={<EditUser />} />
-                <Route path="new" element={<NewUserForm />} />
-              </Route>
-              <Route path="notes">
-                <Route index element={<NotesList />} />
-                <Route path=":id" element={<EditNote />} />
-                <Route path="new" element={<NewNote />} />
+        <Route element={<RequireAuth allowedRoles={[...Object.values(ROLES)]} />}>
+          <Route element={<PersistLogin />}>
+            <Route element={<Prefetch />}>
+              <Route path="/dash/" element={<DashLayout />}>
+                <Route index element={<Welcome />} />
+                <Route path="users">
+                  <Route index element={<UsersList />} />
+                  <Route path=":id" element={<EditUser />} />
+                  <Route path="new" element={<NewUserForm />} />
+                </Route>
+                <Route path="notes">
+                  <Route index element={<NotesList />} />
+                  <Route path=":id" element={<EditNote />} />
+                  <Route path="new" element={<NewNote />} />
+                </Route>
               </Route>
             </Route>
           </Route>
